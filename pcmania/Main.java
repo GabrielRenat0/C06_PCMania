@@ -33,7 +33,7 @@ public class Main {
         promo3.addHardware(new HardwareBasico("HD", 2000), 2);
         promo3.addMemoriaUSB(new MemoriaUSB("HD Externo", 1000));
 
-        Cliente cliente = new Cliente("João da Silva", "123.456.789-00");
+        Cliente cliente = new Cliente("Gabriel Renato Oliveira Lopes", "152.123.567-89");
 
         int opcao;
         do {
