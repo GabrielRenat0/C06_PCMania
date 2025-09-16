@@ -22,13 +22,16 @@ public class Cliente {
         }
     }
 
-    public void mostrarInfo() {
-        System.out.println("Cliente: " + nome + " | CPF: " + cpf);
-        System.out.println("PCs adquiridos:");
-        for (int i = 0; i < qtdComputadores; i++) {
-            computadores[i].mostraPCConfigs();
-        }
+public void mostrarInfo() {
+    System.out.println("Cliente: " + nome + " | CPF: " + cpf);
+    System.out.println("PCs adquiridos:");
+    float total = 0;
+    for (int i = 0; i < qtdComputadores; i++) {
+        computadores[i].mostraPCConfigs();
+        total += computadores[i].getPreco();
     }
+    System.out.println("Total da compra: R$" + total);
+}
 
     public Computador[] getComputadores() {
         return computadores;
